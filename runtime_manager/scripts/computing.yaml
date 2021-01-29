@@ -1500,7 +1500,7 @@ params :
       label : Resolution
       min   : 0
       max   : 10
-      v     : 1.0
+      v     : 4.0
     - name  : step_size
       desc  : step_size desc sample
       label : Step Size
