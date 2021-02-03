@@ -1,0 +1,10 @@
+<launch>
+  <node name="lite_runtime" pkg="runtime_manager" type="lite_runtime.py" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/map.launch" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/sensing.launch" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/localization.launch" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/detection.launch" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/mission_planning.launch" />
+  <include file="$(env AUTOWARE_DIR)/src/Data/Launch/motion_planning.launch" />
+  <node name="imautoware_rviz" pkg="rviz" type="rviz" args="-d $(env AUTOWARE_DIR)/src/Data/Rviz/config.rviz" />
+</launch>

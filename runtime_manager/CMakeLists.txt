@@ -82,6 +82,7 @@ install(
     scripts/avt_camera.launch
     scripts/calibration_publisher.launch
     scripts/ex_mat_pub.launch
+    scripts/launch_files/main.launch
     scripts/launch_files/check.launch
     scripts/launch_files/control.launch
     scripts/launch_files/init.launch
