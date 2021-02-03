@@ -19,6 +19,7 @@ catkin_install_python(
     scripts/runtime_manager_dialog.py
     scripts/test_pub.py
     scripts/test_srv.py
+    scripts/lite_runtime.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 

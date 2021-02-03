@@ -86,6 +86,9 @@ from autoware_msgs.msg import TrafficLight
 from autoware_msgs.msg import AdjustXY
 from types import MethodType
 
+import warnings
+warnings.filterwarnings("ignore")
+
 SCHED_OTHER = 0
 SCHED_FIFO = 1
 SCHED_RR = 2
@@ -2051,6 +2054,7 @@ class MyFrame(rtmgr.MyFrame):
 		return proc
 
 	def roslaunch_to_nodes(self, cmd):
+		print('roslaunch')
 		try:
 			s = subprocess.check_output(cmd).strip()
 			return s.split('\n') if s != '' else []
