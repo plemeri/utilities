@@ -1734,31 +1734,31 @@ params :
       descs :
       - use velocity on waypoints
       - use constant velocity
-      v     : 0
+      v     : 1
     - name  : velocity
       desc  : velocity in dialog mode
       label : Velocity
       min   : 0
       max   : 60
-      v     : 5.0
+      v     : 30.0
     - name  : lookahead_distance
       desc  : lookahead distance in dialog mode
       label : Lookahead Distance
       min   : 0
       max   : 30
-      v     : 4.0
+      v     : 12.0
     - name  : lookahead_ratio
       desc  : velocity proportional coefficient for lookahead distance in waypoint mode
       label : lookahead_ratio
       min   : 0.0
       max   : 5.0
-      v     : 2.0
+      v     : 1.0
     - name  : minimum_lookahead_distance
       desc  : minimum lookahead distance in waypoint mode
       label : minimum_lookahead_distance
       min   : 0.0
       max   : 20.0
-      v     : 6.0
+      v     : 10.0
     - name  : displacement_threshold
       desc  : displacement_threshold
       label : displacement_threshold
@@ -6368,7 +6368,7 @@ params :
       desc  : standard deviation of measurement noise for pose x
       label : pose_stddev_x [m]
       min   : 0.00
-      max   : 0.5
+      max   : 3.0
       v     : 0.05
       cmd_param :
         dash      : ''
@@ -6377,7 +6377,7 @@ params :
       desc  : standard deviation of measurement noise for pose y
       label : pose_stddev_y [m]
       min   : 0.00
-      max   : 0.5
+      max   : 3.0
       v     : 0.05
       cmd_param :
         dash      : ''
