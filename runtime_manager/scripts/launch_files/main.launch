@@ -1,5 +1,5 @@
 <launch>
-  <rosparam command="dump" param="use_sim_time" value="true" ubst_value="true"/>
+  <param name="use_sim_time" value="true"/>
   <node name="lite_runtime" pkg="runtime_manager" type="lite_runtime.py" />
   <include file="$(env AUTOWARE_DIR)/src/Data/Launch/map.launch" />
   <include file="$(env AUTOWARE_DIR)/src/Data/Launch/sensing.launch" />
