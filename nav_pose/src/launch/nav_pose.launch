@@ -1,0 +1,14 @@
+<launch>
+  <arg name="sub_pose_topic"   default="vehicle_pose" />
+  <arg name="pub_pose_topic"   default="nav_pose" />
+  <arg name="center_latitude"  default="37.58" />
+  <arg name="center_longitude" default="126.89" />
+  <arg name="center_altitude"  default="0.0" />
+    <node name="nav_pose" pkg="nav_pose" type="nav_pose.py">
+      <param name="sub_pose_topic"   type="str"    value="$(arg sub_pose_topic)" />
+      <param name="pub_pose_topic"   type="str"    value="$(arg pub_pose_topic)" />
+      <param name="center_latitude"  type="double" value="$(arg center_latitude)" />
+      <param name="center_longitude" type="double" value="$(arg center_longitude)" />
+      <param name="center_altitude"  type="double" value="$(arg center_altitude)" />
+    </node>
+</launch>
